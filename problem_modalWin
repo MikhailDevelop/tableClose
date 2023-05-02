@@ -1,0 +1,177 @@
+<div class="main_container">
+         <div class="container_in">
+            <div class="content">
+                <div class="title">Глагол TO BE</div>
+                <div class="content-info">
+                    <table style="width:100%">
+                        <tr>
+                            <th>Pronoun</th> <!-- ??? -->
+                            <td class="positive">Positive</td>
+                            <td>Positive Contraction</td>
+                            <td>Negative</td>
+                            <td>Negative Contraction</td>
+                        </tr>
+                        <tr>
+                            <!-- Сделать что бы все работало -->
+                            <td><a href="#">I</a></td>
+                         <div class="block_Iam">
+                            <td class="Iam"><a href="#">I&nbsp<span>am</span></a>
+                                <div class="overflow_Iam">
+                                    <div class="close_Iam">close</div>
+                                    <div class="item">I am Love</div>
+                                    <div class="item">You love</div>
+                                    <div class="item">He love</div>
+                                    <div class="item_x">
+                                        less
+                                    </div>   
+                                </div>
+                                <!-- <div class="clos">love</div> -->
+                                
+                            </td>
+                        </div>
+                            <style>
+                              .overflow_Iam {
+                                display: none;
+                                width: 186px;
+                                height: 116px;
+                                background-color: rgba(255, 214, 170, 0.84);
+                                position: absolute;
+                                margin-left: 0px;
+                                border: 2px solid rgb(252, 192, 126);
+                                margin-top: 20px;
+                              }
+                             .overflow_Iam > .item {
+                                padding: 10px 0;
+                                border-bottom: 2px solid rgb(252, 192, 126);
+                              }
+                             .overflow_Iam > .close_Iam {
+                                display: block;
+                                position: absolute;
+                                /* float: right; */
+                                /* position: absolute; */
+                                text-align: right;
+                              }
+
+                              .item_x {
+                                width: 183px;
+                                background-color: red;
+                                position: absolute;
+                              }
+
+                              .item_x > .x {
+                                content:'x';
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                background-color: black;
+                              }
+                            </style>
+
+                            <script>
+                                var overflow1 = document.getElementsByClassName('item_x')[0];
+                                var overflow_Iam = document.getElementsByClassName('overflow_Iam')[0];
+                                var modal_ov = document.getElementsByClassName('item')[0];
+                                var close_r = document.getElementsByClassName('close_Iam')[0];
+
+                                var btn = document.getElementsByClassName('Iam')[0].onclick = function(event) {
+                                    overflow_Iam.style.display='block';
+                                    overflow_Iam.style.position='absolute';
+
+                                    var toggle = document.createElement('div');
+                                    var toggleCl = toggle.classList.add('toggle');
+                                    console.log(toggle);
+                                    overflow_Iam.classList.toggle('toggle');// toggle                                  
+                                    console.log(overflow_Iam);
+                                 
+                                     console.log(cl_search);
+                                     overflow_Iam.innerHTML=`<div>${overflow_Iam}</div>`;
+
+                                     close_r.onclick = function(event) {
+                                       delete overflow_Iam;
+                                       
+                                  }  
+                                }
+                                 
+                                          
+// Сделать что бы все работало   
+                                // let bars = document.getElementsByClassName('bars')[0];
+                                // let overflow = document.getElementsByClassName('overflow')[0];
+                                // let modalWin = document.getElementsByClassName('modalWin')[0];
+                                // let close = document.getElementsByClassName('close')[0];
+                                    
+                                //     bars.onclick = function(event) {
+                                //         overflow.style.display='block';
+                                //         overflow.style.width= '100%';
+                                //         overflow.style.height= '200px';
+                                //         overflow.style.position='absolute';
+                                //         overflow.style.marginTop = '260px';
+                                //         overflow.style.marginLeft = '-239px';
+                                //     }
+
+                                //     close.onclick = function(event) {
+                                //         overflow.style.display='none';
+                                //     }      
+                            </script>
+                          </div>                                
+                            <td><a href='#'>I <span>'m</span></a></td>
+                            <td><a href='#'>I <span>am not</span></a></td>
+                            <td><a href='#'>I <span>'m not</span></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href='#'>You</a></td>
+                            <td><a href='#'>You <span>are</span></a></td>
+                            <td><a href='#'>You <span>'re</span></a></td>
+                            <td><a href='#'>You <span>are not</span></a></td>
+                            <td><a href='#'>You <span>'re not</span></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href='#'>He</a></td>
+                            <td><a href='#'>He <span>is</span></a></td>
+                            <td><a href='#'>He <span>'s</span></a></td>
+                            <td><a href='#'>He <span>is not</span></a></td>
+                            <td><a href='#'>He <span>'s not</span></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href='#'>She</a></td>
+                            <td><a href='#'>She <span>is</span></a></td>
+                            <td><a href='#'>She <span>'s</span></a></td>
+                            <td><a href='#'>She <span>is not</span></a></td>
+                            <td><a href='#'>She <span>'s not</span></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href='#'>It</a></td>
+                            <td><a href='#'>It <span>is</span></a></td>
+                            <td><a href='#'>It <span>'s</span></a></td>
+                            <td><a href='#'>It <span>is not</span></a></td>
+                            <td><a href='#'>It <span>'s not</span></a></td>
+                        </tr>
+                        <tr>
+                            <td>We</td>
+                            <td>We <span>are</span></td>
+                            <td>We <span>'re</span></td>
+                            <td>We are <span>not</span></td>
+                            <td>We<span>'re not</span></td>
+                        </tr>
+                        <tr>
+                            <td>They</td>
+                            <td>They <span>are</span></td>
+                            <td>They <span>'re</span></td>
+                            <td>They <span>are not</span></td>
+                            <td>They <span>'re not</span></td>
+                        </tr>
+                    </table>
+
+                    <style>
+
+                    </style>
+                </div>
+                <div class="content-test"></div>
+            </div>
+         </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="logo">
+                    <div>En</div>
